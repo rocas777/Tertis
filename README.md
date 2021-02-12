@@ -9,9 +9,7 @@ The rest of the game such as points display, game over menu,main menu, keyboard 
 
 ## The Game
 
-<!---
 ![tetris main picture](docs/images/main_game_img.png))
--->
 
 ## Installation
 
