@@ -18,6 +18,12 @@ jobs:
       with:
         go-version: 1.15
 
+    - name: Set ebiten 
+      run: go get github.com/hajimehoshi/ebiten
+      
+    - name: Set image 
+      run: go get golang.org/x/image/colornames@v0.0.0-20200801110659-972c09e46d76
+
     - name: Build
       run: go build -v ./...
 
