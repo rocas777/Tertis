@@ -67,7 +67,6 @@ func Test_NewJPiece(t *testing.T) {
 func Test_NewLPiece(t *testing.T) {
 	game.Clear()
 	game.AddPiece(MockColourSquare{}, Piece.NewLPositions(game.Width(), game.Height()))
-	printMatrix(game.Board())
 	if !game.Board()[0][3].Occupied() {
 		t.Errorf("")
 	}
@@ -88,7 +87,6 @@ func Test_NewLPiece(t *testing.T) {
 func Test_NewSPiece(t *testing.T) {
 	game.Clear()
 	game.AddPiece(MockColourSquare{}, Piece.NewSPositions(game.Width(), game.Height()))
-	printMatrix(game.Board())
 	if !game.Board()[0][4].Occupied() {
 		t.Errorf("")
 	}
@@ -109,7 +107,6 @@ func Test_NewSPiece(t *testing.T) {
 func Test_NewZPiece(t *testing.T) {
 	game.Clear()
 	game.AddPiece(MockColourSquare{}, Piece.NewZPositions(game.Width(), game.Height()))
-	printMatrix(game.Board())
 	if !game.Board()[0][3].Occupied() {
 		t.Errorf("")
 	}
