@@ -17,8 +17,8 @@ jobs:
         go-version: '1.14.0'
     - name: Install dependencies
       run: |
+        sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev
         go version
-        sudo apt install libgl1-mesa-dev
         go get github.com/hajimehoshi/ebiten
         go get golang.org/x/image/colornames@v0.0.0-20200801110659-972c09e46d76
     - name: Run build
