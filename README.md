@@ -1,4 +1,4 @@
-# ![build](https://github.com/rocas777/Tertis/workflows/go/badge.svg)
+![Go](https://github.com/rocas777/Tertis/workflows/Go/badge.svg)
 # Tertis
 Tertis is a simple tetris clone.
 
