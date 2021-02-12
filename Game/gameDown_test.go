@@ -107,6 +107,7 @@ func Test_Game_down_3(t *testing.T) {
 
 func Test_Game_down_4(t *testing.T) {
 	localGame := NewGame(10, 4)
+	localGame.AddPiece(Square.YellowSquare{}, Piece.NewTPositions(10, 4))
 	localGame.Next()
 	localGame.Next()
 	if localGame.Down() {
