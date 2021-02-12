@@ -18,6 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         go version
+        sudo apt install libgl1-mesa-dev
         go get github.com/hajimehoshi/ebiten
         go get golang.org/x/image/colornames@v0.0.0-20200801110659-972c09e46d76
     - name: Run build
